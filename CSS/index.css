@@ -1,0 +1,130 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    font-family: 'Playfair Display', serif;
+}
+
+
+.main .section-top::before {
+    content: "";
+
+    background: url('https://images.unsplash.com/photo-1539667468225-eebb663053e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fG5hdHVyYWx8ZW58MHx8MHx8&w=1000&q=80') no-repeat center center/cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 40vh;
+    z-index: -1;
+    opacity: .7;
+    animation-name: section-background;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+
+
+}
+
+@keyframes section-background {
+    0%{
+        background: url('https://images.unsplash.com/photo-1539667468225-eebb663053e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fG5hdHVyYWx8ZW58MHx8MHx8&w=1000&q=80') no-repeat center center/cover;
+    }
+    25%{
+        background: url('https://www.pixelstalk.net/wp-content/uploads/2016/09/Free-Nature-Full-HD-Backgrounds.png') no-repeat center center/cover;
+    }
+    50%{
+        background: url('https://img3.goodfon.com/wallpaper/nbig/4/69/nature-forest-park-trees-6525.jpg') no-repeat center center/cover;
+    }
+    75%{
+        background: url('https://wallpapercave.com/wp/wp2665205.jpg') no-repeat center center/cover;
+    }
+    
+}
+
+
+.section-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-top p {
+    font-weight: bold;
+}
+
+.img img {
+    border-radius: 50%;
+}
+
+.typewriter h1 {
+    color: #ffffff;
+    font-family: monospace;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(100, end),
+        blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange
+    }
+}
+
+.container {
+    margin-top: 15px;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 15px 0 0 0;
+    background-color: #abcdef;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    color: white;
+    grid-gap: 5px;
+    padding: 5px;
+}
+
+.footer_content a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer_content a:hover{
+    color: blueviolet;
+}
+
+
+

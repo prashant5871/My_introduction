@@ -1,0 +1,99 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: rgb(182, 124, 236);
+
+}
+
+.main form .input_field{
+    display: block;
+    padding: 5px;
+
+}
+
+form{
+    padding: 10px;
+    width: 30vw;
+    margin: auto;
+    box-sizing: border-box;
+    margin-top: 3px;
+    border-radius: 2rem;
+}
+
+input[type="text"],input[type="email"],textarea{
+    width: 100%;
+    border: 1px solid rgb(85, 129, 129);
+    border-radius: 1rem;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+input[type="text"],input[type="email"],input[type="submit"],input[type="reset"]{
+    height: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+input[type="submit"],input[type="reset"]{
+    text-align: center;
+    border-radius: 1rem;
+    width: 100%;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    border:none;
+}
+
+input[type="submit"]:hover,input[type="reset"]:hover{
+    background-color: rgb(152, 73, 226);
+    border: none;
+}
+#gender{
+    width: 15vw;
+    margin: auto;
+}
+
+.main{
+    border: 1px solid rgb(85, 129, 129);
+    width: 30vw;
+    margin: auto;
+    padding: 5px;
+    margin-top: 3px;
+    background-color: #ccc;
+    border-radius: 2rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    margin-bottom: 10px;
+}
+
+.main h1{
+    text-align: center;
+}
+
+@media only screen and (max-width:1330px){
+    .main{
+        width: 60vw;
+    }
+    form{
+        width: 60vw;
+    }
+
+    #gender{
+        width: 30vw;
+    }
+}
+
+@media only screen and (max-width:679px){
+    .main{
+        width: 90vw;
+    }
+    form{
+        width: 90vw;
+    }
+
+    #gender{
+        width: 90vw;
+    }
+}

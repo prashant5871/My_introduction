@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/CSS/feedback.css">
+    <link rel="stylesheet" href="/CSS/navbar.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&display=swap|Fjalla+One&display=swap|Playfair+Display&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/contact.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback-form</title>
+    <script src="/JS/accessibility.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="accessibility">
+            <span>
+                <button class="btn" onclick="Myfun('')">A</button>
+                <button class="btn" onclick="Myfun('increase')">A+</button>
+                <button class="btn" onclick="Myfun('decrease')">A-</button>
+            </span>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">contact me</a></li>
+                <li><a href="feedback.html">feedback</a></li>
+                <li class="menu-item">
+                    <a href="#">About</a>
+                    <ul class="drop-menu">
+                        <li class="drop-menu-item">
+                            <a href="hoby_education_and_interest.html/#hoby">Hobby</a>
+                        </li>
+                        <li class="drop-menu-item">
+                            <a href="hoby_education_and_interest.html/#interest">interest</a>
+                        </li>
+                        <li class="drop-menu-item">
+                            <a href="hoby_education_and_interest.html/#education">Education</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        
+        <right class="right">
+            <h1>Contact Me Form</h1>
+            <form action="/PHP/#" method="post">
+                <div class="input_field">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="input_field">
+                    <label for="mobile">Mobile</label>
+                    <input type="text" name="mobile" id="mobile">
+                </div>
+                <div class="input_field">
+                    <label for="Email">Email</label>
+                    <input type="email" name="Email" id="Email">
+                </div>
+                <div class="input_field" id="gender">
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="Other">
+                    <label for="Other">Other</label>
+                </div>
+
+                <div class="input_field">
+                    <label for="feedback">Your doubt</label>
+                    <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="input_field">
+                    <input type="submit" value="Submit Now">
+                </div>
+                <div class="input_field">
+                    <input type="reset" value="Clear Now">
+                </div>
+            </form>
+        </right>
+        <left class="left">
+            <h2>Get in touch with me</h2>
+            <div class="info">
+                <img src="/Images/whatsapp.svg" alt="whatsapp Logo" height="30" class="logo_image">
+                <p>97249 27782</p>
+            </div>
+            <div class="info">
+                <img src="/Images/Gmail_logo.png" alt="whatsapp Logo" height="35" class="logo_image">
+                <p>prashantkalsariya@gmail.com</p>
+            </div>
+            <div class="info">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7LoX8hyF6mPHCgMJ8rSahOXJSynMKA4Lc3AIonmhcub1IPDrqb1vOiOWca7v9NP760Ik&usqp=CAU" alt="whatsapp Logo" height="28" class="logo_image">
+                <p>97249 27782</p>
+            </div>
+            <div class="info">
+                <img src="/Images/instagram_logo.avif" alt="whatsapp Logo" height="30" class="logo_image">
+                <p>prashant_44</p>
+            </div>
+        </left>
+    </main>
+</body>
+
+</html>

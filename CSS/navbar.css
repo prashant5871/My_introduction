@@ -1,0 +1,92 @@
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li a {
+    padding: 0 0 0 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu,
+.drop-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    display: inline-block;
+}
+
+.menu-item a {
+    text-decoration: none;
+    padding: 6px 10px;
+    color: #000000;
+}
+
+.drop-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 100px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+}
+
+.drop-menu-item {
+    width: 100%;
+}
+
+.drop-menu-item:hover {
+    background-color: #eee;
+}
+
+.drop-menu-item a {
+    color: #555;
+}
+
+.menu-item:hover .drop-menu {
+    display: block;
+}
+
+nav {
+    background-color: #e5e4e4;
+    padding: 13px;
+
+}
+
+.accessibility {
+    float: right;
+
+}
+
+.accessibility span button {
+    border: none;
+    cursor: pointer;
+
+}
+
+.menu a:hover {
+    color: blue;
+
+}
+
+@media only screen and (max-width:400px){
+    header nav a{
+        font-size: 14px;
+    }
+}
