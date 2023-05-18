@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.hobby_container{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1vw;
+}
+
+.cards{
+    box-sizing: border-box;
+    width: 32vw;
+    border: 1px solid #ccc;
+}
+
+.bottom{
+    border: 1px solid #ccc;
+}
+
+.bottom h2{
+    text-align: center;
+}
+
+.button a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: green;
+    color: white;
+    height: 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    width: 6vw;
+    margin: auto;
+    text-decoration: none;
+}
+
+.button a:hover{
+    background-color: rgb(6, 156, 6);
+}
+

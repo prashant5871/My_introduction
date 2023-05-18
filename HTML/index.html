@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="/CSS/scroll_to_top.css">
+    <link rel="stylesheet" href="/CSS/hoby_education_and_interest.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Lobster&display=swap|Fjalla+One&display=swap|Playfair+Display&display=swap"
         rel="stylesheet">
@@ -13,9 +15,32 @@
     <title>My Introduction</title>
 
     <script src="/JS/accessibility.js"></script>
+    <style>
+        #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+    </style>
 </head>
 
 <body>
+   
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <header>
         <div class="accessibility">
             <span>
@@ -61,15 +86,44 @@
                 pusrsuring my B.Tech Degree in Computer Engineering from DDIT Nadiad,Gujarat. I have learning skill from
                 there.Here is some section where I share my skill and hobby. Please visit them and also do not forget to
                 give your feedback.if have any doubt , feel free to contact me.Thank You!!</p>
-            <h2>Hobby</h2>
-            <ul>
+        </div>
+    </main>
+    <div class="hobby_container">
+        <div class="section-container">
+            <h2 class="section-title">Hobbies</h2>
+            <ul class="section-content">
                 <li>Playing Cricket</li>
                 <li>Swimming</li>
                 <li>Reading</li>
             </ul>
-            <p>For more detail please visit <a href="#">Hobby</a> section</p>
+            <div class="button">
+                <a href="hoby_education_and_interest.html">Read more</a>
+            </div>
         </div>
-    </main>
+
+        <div class="section-container">
+            <h2 class="section-title">Skills</h2>
+            <ul class="section-content">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            <div class="button">
+                <a href="hoby_education_and_interest.html">Read more</a>
+            </div>
+        </div>
+
+        <div class="section-container">
+            <h2 class="section-title">Education</h2>
+            <ul class="section-content">
+                <li>B.Tech in Computer Engineering from DDIT Nadiad, Gujarat</li>
+                <li>Additional educational qualifications</li>
+            </ul>
+            <div class="button">
+                <a href="hoby_education_and_interest.html">Read more</a>
+            </div>
+        </div>
+    </div>
     <footer class="footer">
         <div class="footer_content">
             <h2>Links</h2>
@@ -94,6 +148,7 @@
                 </a>
             </div>
         </div>
+
         <div class="footer_content">
             <h2>About</h2>
             <div class="links">
@@ -122,6 +177,7 @@
             </div>
         </div>
     </footer>
+    <script src="/JS/scroll_to_top.js"></script>
 </body>
 
 </html>
