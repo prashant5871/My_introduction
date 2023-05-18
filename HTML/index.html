@@ -2,40 +2,21 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="/CSS/scroll_to_top.css">
-    <link rel="stylesheet" href="/CSS/hoby_education_and_interest.css">
+    <link rel="stylesheet" href="../CSS/toggle_button.css">
+    <link rel="stylesheet" href="../CSS/scroll_to_top.css">
+    <link rel="stylesheet" href="../CSS/hoby_education_and_interest.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Lobster&display=swap|Fjalla+One&display=swap|Playfair+Display&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/CSS/navbar.css">
-    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="../CSS/index.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Introduction</title>
 
-    <script src="/JS/accessibility.js"></script>
-    <style>
-        #myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: red;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
-  }
-  
-  #myBtn:hover {
-    background-color: #555;
-  }
-    </style>
+    <script src="../JS/accessibility.js"></script>
+
 </head>
 
 <body>
@@ -51,11 +32,11 @@
         </div>
         <nav>
             <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">contact me</a></li>
-                <li><a href="feedback.html">feedback</a></li>
+                <li><a href="../HTML/index.html">Home</a></li>
+                <li><a href="../HTML/contact.html">contact me</a></li>
+                <li><a href="../HTML/feedback.html">feedback</a></li>
                 <li class="menu-item">
-                    <a href="#">About</a>
+                    <a href="hoby_education_and_interest.html">About</a>
                     <ul class="drop-menu">
                         <li class="drop-menu-item">
                             <a href="hoby_education_and_interest.html">Hobby</a>
@@ -71,10 +52,14 @@
             </ul>
         </nav>
     </header>
+    <div class="toggle">
+        <input type="checkbox" id="toggle-btn" />
+        <label for="toggle-btn"></label>
+      </div>      
     <main class="main">
         <section class="section-top">
             <div class="img">
-                <img src="/Images/my.jpg" alt="My image" height="200">
+                <img src="../Images/my.jpg" alt="My image" height="200">
             </div>
             <div class="typewriter">
                 <h1>Welcome To My Website !</h1>
@@ -177,7 +162,8 @@
             </div>
         </div>
     </footer>
-    <script src="/JS/scroll_to_top.js"></script>
+    <script src="../JS/scroll_to_top.js"></script>
+    <!-- <script src="../JS/theme_changer.js"></script> -->
 </body>
 
 </html>

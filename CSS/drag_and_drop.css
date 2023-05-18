@@ -1,0 +1,77 @@
+
+.navbar {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    border-radius: 31px;
+
+}
+
+.link {
+    padding: 9px;
+    margin: 5px 0 5px 35px;
+
+}
+
+.link a {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+
+}
+.link a:hover{
+    background-color: white;
+    color: black;
+    padding: 5px;
+}
+#div1 {
+    width: 315px;
+    height: 400px;
+    /* width: 150px; */
+    padding: 10px;
+    border: 1px solid #000000;
+}
+
+.game {
+    color: rgb(57, 0, 88);
+    border: 1px solid blue;
+    margin-left: 460px;
+    width: 40%;
+    padding: 15px;
+    background-image: url('/HTML/puz_back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#drag1,
+#drag2,
+#drag3,
+#drag4 {
+    height: 200px;
+}
+
+#fun {
+    border: 1px solid gold;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 5px;
+
+
+}
+
+header {
+    /* height: 40px; */
+    color: white;
+    margin-bottom: 5px;
+    background-color: #276017;
+    font-size: 200%;
+    /* padding: 20px; */
+    margin: 2px;
+    padding: 1px;
+    text-align: center;
+}
+
+body {
+    background-image: url('/HTML/game_bode_back.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

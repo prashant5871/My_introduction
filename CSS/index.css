@@ -3,13 +3,13 @@ body {
     margin: 0;
     background-color: black;
     font-family: 'Playfair Display', serif;
+    transition: background-color 0.3s;
 }
-
 
 .main .section-top::before {
     content: "";
 
-    background: url('https://images.unsplash.com/photo-1539667468225-eebb663053e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fG5hdHVyYWx8ZW58MHx8MHx8&w=1000&q=80') no-repeat center center/cover;
+    background: url('../Images/index-back1.jpeg') no-repeat center center/cover;
     position: absolute;
     left: 0;
     right: 0;
@@ -25,19 +25,19 @@ body {
 
 @keyframes section-background {
     0% {
-        background: url('https://images.unsplash.com/photo-1539667468225-eebb663053e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fG5hdHVyYWx8ZW58MHx8MHx8&w=1000&q=80') no-repeat center center/cover;
+        background: url('../Images/index-back1.jpeg') no-repeat center center/cover;
     }
 
     25% {
-        background: url('https://www.pixelstalk.net/wp-content/uploads/2016/09/Free-Nature-Full-HD-Backgrounds.png') no-repeat center center/cover;
+        background: url('../Images/index-back2.png') no-repeat center center/cover;
     }
 
     50% {
-        background: url('https://img3.goodfon.com/wallpaper/nbig/4/69/nature-forest-park-trees-6525.jpg') no-repeat center center/cover;
+        background: url('../Images/index-back3.jpg') no-repeat center center/cover;
     }
 
     75% {
-        background: url('https://wallpapercave.com/wp/wp2665205.jpg') no-repeat center center/cover;
+        background: url('../Images/index-back5.jpg') no-repeat center center/cover;
     }
 
 }
@@ -144,4 +144,9 @@ footer {
 .section-content {
     font-size: 18px;
     color: #666;
+}
+
+body[data-theme="dark"] {
+    background-color: black;
+    color: white;
 }

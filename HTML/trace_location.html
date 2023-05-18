@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../CSS/location.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+
+   
+</head>
+
+<body>
+    
+    <header>My Location :</header>
+    <div class="Loc">
+        <h1>Trace Location : </h1>
+        <p>Welcome!!!<br>This will help you to locate your location!!</p>
+        <button id="btn" onclick="getLocation()">Click Here</button>
+        <p>Now click below for see My location : </p>
+        <button id="btn2" onclick="MyFunction()">Click Here</button>
+
+        <p id="lati"></p>
+        <p id="exact_pos"></p>
+    </div>
+    <script>
+        var x = document.getElementById('lati');
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }
+            else {
+                x.innerHTML = "OOps!!Geolocaiton is not supported on your browser!!";
+            }
+        }
+        function showPosition(position) {
+            x.innerHTML = "Your latitude and longitude are : <br><ul><li>Latitude: " + position.coords.latitude +
+                "</li><br><li>Longitude: " + position.coords.longitude + "</li></ul>";
+        }
+
+        function MyFunction() {
+            document.getElementById("exact_pos").innerHTML = "My Current location is : Surat";
+        }
+    </script>
+</body>
+
+</html>
