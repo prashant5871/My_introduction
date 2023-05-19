@@ -110,6 +110,7 @@ body {
 
 .container h1 {
     text-align: center;
+    color: black;
 }
 
 footer {
@@ -149,4 +150,27 @@ footer {
 body[data-theme="dark"] {
     background-color: black;
     color: white;
+}
+
+sup{
+    background-color: red;
+    color: white;
+    animation-name: new-label;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    border-radius: 1rem;
+    padding: 2px;
+}
+
+@keyframes new-label{
+    0%{
+        background-color: black;
+        color: white;
+
+    }
+    50%{
+        background-color: red;
+        color: white;
+    }
 }

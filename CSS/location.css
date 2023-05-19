@@ -30,9 +30,9 @@
     background-image: url('../Images/map_back.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: 500px;
-    width: 40%;
-    padding: 15px;
+    width: 30vw;
+    margin: auto;
+    padding: 1rem;
     color: rgb(7, 37, 0);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
@@ -60,4 +60,21 @@ header {
     text-align: center;
     font-size: 35px;
     color: white;
+}
+
+@media only screen and (min-width:0px) and (max-width:795px){
+    .Loc{
+        width: 85vw;
+    }
+}
+#button-3{
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
+#button-3:hover{
+    background-color: rgb(1, 105, 1);
 }
